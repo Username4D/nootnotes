@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://bulxy2b3s2r43"]
+
+[ext_resource type="PackedScene" uid="uid://c1g3lx3kyw10u" path="res://Scenes/button.tscn" id="1_c2531"]
+[ext_resource type="Texture2D" uid="uid://svc4rnlckcg0" path="res://Assets/sheet_white1x.png" id="2_ffrot"]
+[ext_resource type="Texture2D" uid="uid://cvntfy3cc2ee5" path="res://Assets/expansion_sheet_white1x.png" id="3_0ulrk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3nad"]
+resource_local_to_scene = true
+atlas = ExtResource("2_ffrot")
+region = Rect2(150, 250, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aa4wl"]
+resource_local_to_scene = true
+atlas = ExtResource("2_ffrot")
+region = Rect2(400, 50, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8r8lr"]
+resource_local_to_scene = true
+atlas = ExtResource("2_ffrot")
+region = Rect2(150, 450, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gx2fs"]
+resource_local_to_scene = true
+atlas = ExtResource("3_0ulrk")
+region = Rect2(0, 450, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbv1c"]
+resource_local_to_scene = true
+atlas = ExtResource("3_0ulrk")
+region = Rect2(50, 100, 50, 50)
+
+[node name="navbar" type="HBoxContainer"]
+offset_right = 1152.0
+offset_bottom = 64.0
+alignment = 1
+
+[node name="share" parent="." instance=ExtResource("1_c2531")]
+layout_mode = 2
+icon = SubResource("AtlasTexture_c3nad")
+
+[node name="Button2" parent="." instance=ExtResource("1_c2531")]
+layout_mode = 2
+icon = SubResource("AtlasTexture_aa4wl")
+
+[node name="Button3" parent="." instance=ExtResource("1_c2531")]
+layout_mode = 2
+icon = SubResource("AtlasTexture_8r8lr")
+
+[node name="Button4" parent="." instance=ExtResource("1_c2531")]
+layout_mode = 2
+icon = SubResource("AtlasTexture_gx2fs")
+
+[node name="Button5" parent="." instance=ExtResource("1_c2531")]
+layout_mode = 2
+icon = SubResource("AtlasTexture_tbv1c")

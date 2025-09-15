@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://tv7mkv6amtfn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ac4ai"]
+content_margin_left = 32.0
+content_margin_top = 8.0
+content_margin_right = 32.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nwibb"]
+content_margin_left = 32.0
+content_margin_top = 8.0
+content_margin_right = 32.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0kxgl"]
+content_margin_left = 32.0
+content_margin_top = 8.0
+content_margin_right = 32.0
+content_margin_bottom = 8.0
+
+[node name="TextEdit" type="TextEdit"]
+offset_top = 64.0
+offset_right = 1152.0
+offset_bottom = 640.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ac4ai")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nwibb")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_0kxgl")
+placeholder_text = "Text"
+scroll_smooth = true

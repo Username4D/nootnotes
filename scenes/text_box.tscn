@@ -25,5 +25,5 @@ offset_bottom = 640.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ac4ai")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_nwibb")
 theme_override_styles/read_only = SubResource("StyleBoxEmpty_0kxgl")
-placeholder_text = "Text"
+placeholder_text = "Start Typing..."
 scroll_smooth = true

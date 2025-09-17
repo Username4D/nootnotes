@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cuiu1dc13ohg5"]
 
-[ext_resource type="PackedScene" uid="uid://bulxy2b3s2r43" path="res://Scenes/navbar.tscn" id="1_05um8"]
-[ext_resource type="PackedScene" uid="uid://tv7mkv6amtfn" path="res://Scenes/text_box.tscn" id="2_56gac"]
+[ext_resource type="PackedScene" uid="uid://bulxy2b3s2r43" path="res://scenes/navbar.tscn" id="1_05um8"]
+[ext_resource type="PackedScene" uid="uid://tv7mkv6amtfn" path="res://scenes/text_box.tscn" id="2_56gac"]
 
 [node name="view" type="Control"]
 layout_mode = 3
@@ -13,8 +13,8 @@ grow_vertical = 2
 
 [node name="navbar" parent="." instance=ExtResource("1_05um8")]
 layout_mode = 0
-offset_top = 16.0
-offset_bottom = 80.0
+offset_top = 32.0
+offset_bottom = 64.0
 
 [node name="TextEdit" parent="." instance=ExtResource("2_56gac")]
 layout_mode = 0

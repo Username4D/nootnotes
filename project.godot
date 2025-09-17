@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="NootNotes"
+run/main_scene="uid://cuiu1dc13ohg5"
 config/features=PackedStringArray("4.4")
+
+[autoload]
+
+UiHandler="*res://Scripts/ui_handler.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/SmoothScroll/plugin.cfg", "res://addons/Todo_Manager/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray()

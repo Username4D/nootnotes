@@ -20,4 +20,9 @@ UiHandler="*res://Scripts/ui_handler.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/godot-wakatime/plugin.cfg")
+
+[rendering]
+
+anti_aliasing/quality/msaa_2d=2
+environment/defaults/default_clear_color=Color(0.0142752, 0.0142752, 0.0142752, 1)

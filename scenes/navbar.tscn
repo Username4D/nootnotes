@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bulxy2b3s2r43"]
 
 [ext_resource type="PackedScene" uid="uid://c1g3lx3kyw10u" path="res://scenes/button.tscn" id="1_c2531"]
-[ext_resource type="Script" uid="uid://h10dvq2ksi1y" path="res://scenes/navbar.gd" id="1_ffrot"]
+[ext_resource type="Script" uid="uid://cc2x1iltx3uo7" path="res://Scripts/navbar.gd" id="1_ffrot"]
 [ext_resource type="Texture2D" uid="uid://svc4rnlckcg0" path="res://Assets/sheet_white1x.png" id="2_ffrot"]
 [ext_resource type="Texture2D" uid="uid://cvntfy3cc2ee5" path="res://Assets/expansion_sheet_white1x.png" id="3_0ulrk"]
 
@@ -51,9 +51,11 @@ icon = SubResource("AtlasTexture_8r8lr")
 
 [node name="type" parent="." instance=ExtResource("1_c2531")]
 layout_mode = 2
+button_pressed = true
 icon = SubResource("AtlasTexture_gx2fs")
+metadata/mode = true
 
 [node name="draw" parent="." instance=ExtResource("1_c2531")]
 layout_mode = 2
-toggle_mode = true
 icon = SubResource("AtlasTexture_tbv1c")
+metadata/mode = true

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuiu1dc13ohg5"]
+[gd_scene load_steps=5 format=3 uid="uid://cuiu1dc13ohg5"]
 
 [ext_resource type="PackedScene" uid="uid://bulxy2b3s2r43" path="res://scenes/navbar.tscn" id="1_05um8"]
 [ext_resource type="PackedScene" uid="uid://tv7mkv6amtfn" path="res://scenes/text_box.tscn" id="2_56gac"]
+[ext_resource type="PackedScene" uid="uid://co82q7mh2whxe" path="res://scenes/color_bar.tscn" id="3_oodm0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56gac"]
 
@@ -36,3 +37,11 @@ custom_minimum_size = Vector2(1088, 512)
 layout_mode = 2
 scroll_fit_content_height = true
 scroll_fit_content_width = true
+
+[node name="color_bar" parent="." instance=ExtResource("3_oodm0")]
+visible = false
+layout_mode = 0
+offset_left = 0.0
+offset_top = 544.0
+offset_right = 1152.0
+offset_bottom = 639.99

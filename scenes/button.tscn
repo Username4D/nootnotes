@@ -18,3 +18,4 @@ theme = ExtResource("1_0kpiu")
 toggle_mode = true
 icon = SubResource("AtlasTexture_0kpiu")
 icon_alignment = 1
+metadata/mode = false

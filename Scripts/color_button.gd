@@ -4,6 +4,8 @@ extends Button
 
 func _ready() -> void:
 	$color.modulate = color
+	if self.button_pressed == true:
+		bshow()
 	
 func bshow():
 	$bg.visible = true

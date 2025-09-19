@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://co82q7mh2whxe" path="res://scenes/color_bar.tscn" id="3_oodm0"]
 [ext_resource type="Script" uid="uid://dr8snksqm0kau" path="res://Scripts/drawing_area.gd" id="4_l8ii4"]
 [ext_resource type="Texture2D" uid="uid://cetmoqdvm6gqg" path="res://Assets/noot.png" id="5_1f5jj"]
-[ext_resource type="Script" uid="uid://drae1hewl858x" path="res://Scenes/noot.gd" id="6_liibb"]
+[ext_resource type="Script" uid="uid://caxf54j2ecu8c" path="res://Scripts/noot.gd" id="6_1f5jj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56gac"]
 
@@ -119,7 +119,7 @@ offset_bottom = 639.99
 position = Vector2(96, 554.7)
 scale = Vector2(0.375, 0.375)
 sprite_frames = SubResource("SpriteFrames_4n05q")
-script = ExtResource("6_liibb")
+script = ExtResource("6_1f5jj")
 
 [node name="Label" type="Label" parent="noot"]
 offset_left = -256.0

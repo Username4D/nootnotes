@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://525p4capas6n"]
+
+[ext_resource type="PackedScene" uid="uid://dthvf2ndib18c" path="res://scenes/product_category.tscn" id="1_lx5au"]
+[ext_resource type="PackedScene" uid="uid://bryds5p3uud8d" path="res://scenes/panel.tscn" id="2_xfvoa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bdmwb"]
+bg_color = Color(0.0313726, 0.0313726, 0.0313726, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 672.0
+color = Color(0, 0, 0, 0.701961)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 96.0
+offset_right = 928.0
+offset_bottom = 544.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bdmwb")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 128.0
+offset_right = 896.0
+offset_bottom = 512.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Features" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_lx5au")]
+layout_mode = 2
+
+[node name="product_panel" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+
+[node name="product_panel2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+
+[node name="product_panel3" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2

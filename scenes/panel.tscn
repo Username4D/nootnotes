@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://bryds5p3uud8d"]
+
+[ext_resource type="Theme" uid="uid://ctl5gy4ojdsta" path="res://Resources/editor_theme.tres" id="1_ixbsq"]
+[ext_resource type="Script" uid="uid://dx5q3jthbuhpr" path="res://Scripts/panel.gd" id="1_wdgw4"]
+[ext_resource type="Texture2D" uid="uid://svc4rnlckcg0" path="res://Assets/sheet_white1x.png" id="2_wdgw4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a5432"]
+bg_color = Color(0.0214346, 0.0214346, 0.0214346, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vwnd"]
+atlas = ExtResource("2_wdgw4")
+region = Rect2(450, 50, 50, 50)
+
+[node name="product_panel" type="Panel"]
+custom_minimum_size = Vector2(640, 64)
+offset_right = 640.0
+offset_bottom = 64.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_a5432")
+script = ExtResource("1_wdgw4")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 288.0
+offset_bottom = 64.0
+text = "Unlock pen tool"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_right = 512.0
+offset_bottom = 64.0
+text = "3.1k"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 584.0
+offset_top = 8.0
+offset_right = 632.0
+offset_bottom = 56.0
+theme = ExtResource("1_ixbsq")
+icon = SubResource("AtlasTexture_5vwnd")
+icon_alignment = 1

@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://dthvf2ndib18c"]
+
+[ext_resource type="Script" uid="uid://dpiycjsce54p6" path="res://Scripts/product_category.gd" id="1_6c06t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f016l"]
+font_size = 32
+
+[node name="product_category" type="Control"]
+custom_minimum_size = Vector2(640, 64)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -512.0
+offset_bottom = -584.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6c06t")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(0, -8.27)
+points = PackedVector2Array(0, 64, 640, 64)
+width = 3.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 64.0
+text = "Category:"
+label_settings = SubResource("LabelSettings_f016l")
+vertical_alignment = 1

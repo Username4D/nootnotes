@@ -15,7 +15,7 @@ func m_update():
 func _on_pressed():
 	start_pos = get_viewport().get_mouse_position() + Vector2(-32, $"../ScrollContainer".scroll_vertical - 96)
 	new_line = Line2D.new()
-	new_line.width = 32.0
+	new_line.width =24.0
 	new_line.modulate.a = 0.2
 	new_line.default_color = UiHandler.color
 	new_line.add_point(start_pos)

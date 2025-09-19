@@ -20,7 +20,7 @@ UiHandler="*res://Scripts/ui_handler.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-wakatime/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
 [input]
 

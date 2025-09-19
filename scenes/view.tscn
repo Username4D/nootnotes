@@ -1,11 +1,66 @@
-[gd_scene load_steps=6 format=3 uid="uid://cuiu1dc13ohg5"]
+[gd_scene load_steps=16 format=3 uid="uid://cuiu1dc13ohg5"]
 
 [ext_resource type="PackedScene" uid="uid://bulxy2b3s2r43" path="res://scenes/navbar.tscn" id="1_05um8"]
 [ext_resource type="PackedScene" uid="uid://tv7mkv6amtfn" path="res://scenes/text_box.tscn" id="2_56gac"]
 [ext_resource type="PackedScene" uid="uid://co82q7mh2whxe" path="res://scenes/color_bar.tscn" id="3_oodm0"]
 [ext_resource type="Script" uid="uid://dr8snksqm0kau" path="res://Scripts/drawing_area.gd" id="4_l8ii4"]
+[ext_resource type="Texture2D" uid="uid://cetmoqdvm6gqg" path="res://Assets/noot.png" id="5_1f5jj"]
+[ext_resource type="Script" uid="uid://drae1hewl858x" path="res://Scenes/noot.gd" id="6_liibb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56gac"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6ewd"]
+atlas = ExtResource("5_1f5jj")
+region = Rect2(7168, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq2kr"]
+atlas = ExtResource("5_1f5jj")
+region = Rect2(7680, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhqkc"]
+atlas = ExtResource("5_1f5jj")
+region = Rect2(8192, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbjii"]
+atlas = ExtResource("5_1f5jj")
+region = Rect2(8704, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voysv"]
+atlas = ExtResource("5_1f5jj")
+region = Rect2(512, 0, 512, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbmxt"]
+atlas = ExtResource("5_1f5jj")
+region = Rect2(1024, 0, 512, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4n05q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6ewd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq2kr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bhqkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbjii")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_voysv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbmxt")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1f5jj"]
+font_size = 40
 
 [node name="view" type="Control"]
 layout_mode = 3
@@ -26,6 +81,8 @@ offset_left = 32.0
 offset_top = 96.0
 offset_right = 1120.0
 offset_bottom = 608.0
+follow_focus = true
+horizontal_scroll_mode = 0
 
 [node name="Control" type="PanelContainer" parent="ScrollContainer"]
 layout_mode = 2
@@ -36,6 +93,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_56gac")
 [node name="TextEdit" parent="ScrollContainer/Control" instance=ExtResource("2_56gac")]
 custom_minimum_size = Vector2(1088, 512)
 layout_mode = 2
+wrap_mode = 1
 scroll_fit_content_height = true
 scroll_fit_content_width = true
 
@@ -56,6 +114,22 @@ offset_left = 0.0
 offset_top = 544.0
 offset_right = 1152.0
 offset_bottom = 639.99
+
+[node name="noot" type="AnimatedSprite2D" parent="."]
+position = Vector2(96, 554.7)
+scale = Vector2(0.375, 0.375)
+sprite_frames = SubResource("SpriteFrames_4n05q")
+script = ExtResource("6_liibb")
+
+[node name="Label" type="Label" parent="noot"]
+offset_left = -256.0
+offset_top = -285.0
+offset_right = 256.0
+offset_bottom = -115.0
+text = "356753673546756"
+label_settings = SubResource("LabelSettings_1f5jj")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="button_up" from="drawing_area" to="drawing_area" method="_on_button_up"]
 [connection signal="pressed" from="drawing_area" to="drawing_area" method="_on_pressed"]

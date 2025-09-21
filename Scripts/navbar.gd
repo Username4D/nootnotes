@@ -14,6 +14,7 @@ func _ready() -> void:
 func mode_button_pressed(button):
 	UiHandler.mode = button.name
 	UiHandler.mode_update.emit()
+	button.button_pressed = true
 	for i in self.get_children():
 		if i != button:
 			i.button_pressed = false

@@ -29,3 +29,13 @@ func _on_button_up() -> void:
 func _process(delta: float) -> void:
 	if new_line:
 		new_line.set_point_position(1, Vector2(get_viewport().get_mouse_position().x - 32,new_line.points[0].y))
+
+func make_line(x, y, z):
+	start_pos = x
+	var xnew_line = Line2D.new()
+	xnew_line.width =24.0
+	xnew_line.modulate.a = 0.2
+	xnew_line.default_color = z
+	xnew_line.add_point(start_pos)
+	xnew_line.add_point(y)
+	$"../ScrollContainer/Control/TextEdit".add_child(xnew_line)

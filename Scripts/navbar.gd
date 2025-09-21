@@ -23,6 +23,8 @@ func other_button_pressed(button):
 	match button.name:
 		"shop":
 			$"../shop".visible = true
+		"save":
+			self.get_parent().save()
 
 func refresh():
 	for i in self.get_children():

@@ -2,5 +2,5 @@ extends Node
 
 var mode = "type"
 signal mode_update
-var color = Color(Color.WHEAT)
+var color = Color(Color.TRANSPARENT)
 var coins = 0

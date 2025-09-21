@@ -23,10 +23,13 @@ func m_update():
 		self.visible = false
 
 func refresh():
+	print("refresh")
 	for i in $HBoxContainer.get_children():
 		i.queue_free()
 	for i in PurchaseManager.bought_colors:
 		var new = color_button_scene.instantiate()
 		new.color = i
 		new.name = var_to_str(i)
+		new.toggle_mode = true
+		new.pressed.connect(press.bind(new))
 		$HBoxContainer.add_child(new)

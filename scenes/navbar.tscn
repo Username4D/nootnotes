@@ -45,21 +45,25 @@ script = ExtResource("1_ffrot")
 [node name="share" parent="." instance=ExtResource("1_c2531")]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+toggle_mode = false
 icon = SubResource("AtlasTexture_c3nad")
 
 [node name="exit" parent="." instance=ExtResource("1_c2531")]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+toggle_mode = false
 icon = SubResource("AtlasTexture_aa4wl")
 
 [node name="shop" parent="." instance=ExtResource("1_c2531")]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+toggle_mode = false
 icon = SubResource("AtlasTexture_ffrot")
 
 [node name="save" parent="." instance=ExtResource("1_c2531")]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
+toggle_mode = false
 icon = SubResource("AtlasTexture_8r8lr")
 
 [node name="type" parent="." instance=ExtResource("1_c2531")]

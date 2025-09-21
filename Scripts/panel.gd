@@ -24,10 +24,26 @@ func refresh():
 
 
 func _on_button_pressed() -> void:
-	if is_color:
-		PurchaseManager.bought_colors.append(color)
-		PurchaseManager.reload_colors.emit()
+	if UiHandler.coins >= price:
+		if is_color:
+			PurchaseManager.bought_colors.append(color)
+			PurchaseManager.reload_colors.emit()
+		else:
+			PurchaseManager.bought_features.append(self.name)
+			PurchaseManager.reload_navbar.emit()
+		UiHandler.coins -= price
 	else:
-		PurchaseManager.bought_features.append(self.name)
-		PurchaseManager.reload_navbar.emit()
+		$price.modulate.g = 0
+		$price.modulate.b = 0
+		warn()
 	refresh()
+
+func warn():
+	await get_tree().create_timer(0.01).timeout
+	if $price.modulate.g < 1:
+		$price.modulate.g += 0.02
+		$price.modulate.b += 0.02
+		warn()
+	else:
+		$price.modulate.g = 1
+		$price.modulate.b = 1

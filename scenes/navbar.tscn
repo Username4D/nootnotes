@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bulxy2b3s2r43"]
+[gd_scene load_steps=11 format=3 uid="uid://bulxy2b3s2r43"]
 
 [ext_resource type="PackedScene" uid="uid://c1g3lx3kyw10u" path="res://scenes/button.tscn" id="1_c2531"]
 [ext_resource type="Script" uid="uid://cc2x1iltx3uo7" path="res://Scripts/navbar.gd" id="1_ffrot"]
@@ -13,7 +13,12 @@ region = Rect2(150, 250, 50, 50)
 [sub_resource type="AtlasTexture" id="AtlasTexture_aa4wl"]
 resource_local_to_scene = true
 atlas = ExtResource("2_ffrot")
-region = Rect2(400, 50, 50, 50)
+region = Rect2(400, 100, 50, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffrot"]
+resource_local_to_scene = true
+atlas = ExtResource("2_ffrot")
+region = Rect2(0, 100, 50, 50)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8r8lr"]
 resource_local_to_scene = true
@@ -38,24 +43,34 @@ alignment = 1
 script = ExtResource("1_ffrot")
 
 [node name="share" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 icon = SubResource("AtlasTexture_c3nad")
 
 [node name="exit" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 icon = SubResource("AtlasTexture_aa4wl")
 
+[node name="shop" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+icon = SubResource("AtlasTexture_ffrot")
+
 [node name="save" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 icon = SubResource("AtlasTexture_8r8lr")
 
 [node name="type" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 button_pressed = true
 icon = SubResource("AtlasTexture_gx2fs")
 metadata/mode = true
 
 [node name="draw" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 icon = SubResource("AtlasTexture_tbv1c")
 metadata/mode = true

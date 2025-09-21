@@ -47,11 +47,69 @@ size_flags_vertical = 3
 [node name="Features" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_lx5au")]
 layout_mode = 2
 
-[node name="product_panel" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+[node name="draw" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+product_name = "Unlock pen tool"
+
+[node name="save" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+product_name = "Unlock saving"
+
+[node name="exit" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+product_name = "Unlock Menu"
+
+[node name="share" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+product_name = "Unlock Menu"
+
+[node name="Colors" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_lx5au")]
 layout_mode = 2
 
-[node name="product_panel2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+[node name="menu2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
 layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.1157, 0.89, 0.799665, 1)
 
-[node name="product_panel3" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+[node name="menu3" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
 layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.269647, 0.90138, 0.599112, 1)
+
+[node name="menu4" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.883873, 0.772045, 0.18079, 1)
+
+[node name="menu5" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.990301, 0.683452, 0.634004, 1)
+
+[node name="menu6" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.987733, 0.657215, 0.809396, 1)
+
+[node name="menu7" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.880322, 0.684221, 0.983737, 1)
+
+[node name="menu8" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.714854, 0.756013, 0.993393, 1)
+
+[node name="menu9" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+layout_mode = 2
+is_color = true
+product_name = "Unlock Menu"
+color = Color(0.539218, 0.808748, 0.990923, 1)

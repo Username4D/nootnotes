@@ -1,11 +1,13 @@
-[gd_scene load_steps=16 format=3 uid="uid://cuiu1dc13ohg5"]
+[gd_scene load_steps=18 format=3 uid="uid://cuiu1dc13ohg5"]
 
 [ext_resource type="PackedScene" uid="uid://bulxy2b3s2r43" path="res://scenes/navbar.tscn" id="1_05um8"]
+[ext_resource type="Script" uid="uid://c0cr1nmsgena0" path="res://scenes/view.gd" id="1_k6ewd"]
 [ext_resource type="PackedScene" uid="uid://tv7mkv6amtfn" path="res://scenes/text_box.tscn" id="2_56gac"]
 [ext_resource type="PackedScene" uid="uid://co82q7mh2whxe" path="res://scenes/color_bar.tscn" id="3_oodm0"]
 [ext_resource type="Script" uid="uid://dr8snksqm0kau" path="res://Scripts/drawing_area.gd" id="4_l8ii4"]
 [ext_resource type="Texture2D" uid="uid://cetmoqdvm6gqg" path="res://Assets/noot.png" id="5_1f5jj"]
 [ext_resource type="Script" uid="uid://caxf54j2ecu8c" path="res://Scripts/noot.gd" id="6_1f5jj"]
+[ext_resource type="PackedScene" uid="uid://525p4capas6n" path="res://scenes/shop.tscn" id="8_pq2kr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56gac"]
 
@@ -69,6 +71,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_k6ewd")
 
 [node name="navbar" parent="." instance=ExtResource("1_05um8")]
 layout_mode = 0
@@ -130,6 +133,11 @@ text = "356753673546756"
 label_settings = SubResource("LabelSettings_1f5jj")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="shop" parent="." instance=ExtResource("8_pq2kr")]
+visible = false
+z_index = 2
+layout_mode = 1
 
 [connection signal="button_up" from="drawing_area" to="drawing_area" method="_on_button_up"]
 [connection signal="pressed" from="drawing_area" to="drawing_area" method="_on_pressed"]

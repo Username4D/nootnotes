@@ -22,7 +22,7 @@ offset_bottom = 64.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_a5432")
 script = ExtResource("1_wdgw4")
 
-[node name="Label" type="Label" parent="."]
+[node name="product" type="Label" parent="."]
 layout_mode = 0
 offset_left = 32.0
 offset_right = 288.0
@@ -30,7 +30,7 @@ offset_bottom = 64.0
 text = "Unlock pen tool"
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="."]
+[node name="price" type="Label" parent="."]
 layout_mode = 0
 offset_left = 288.0
 offset_right = 512.0
@@ -47,3 +47,12 @@ offset_bottom = 56.0
 theme = ExtResource("1_ixbsq")
 icon = SubResource("AtlasTexture_5vwnd")
 icon_alignment = 1
+
+[node name="color" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 48.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -7,7 +7,7 @@ func _ready() -> void:
 	UiHandler.mode_update.connect(m_update)
 
 func m_update():
-	if UiHandler.mode == "draw" or "clear":
+	if UiHandler.mode == "draw" or UiHandler.mode == "clear":
 		self.visible = true
 	else:
 		self.visible = false

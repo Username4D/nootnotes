@@ -51,13 +51,9 @@ product_name = "Unlock pen tool"
 layout_mode = 2
 product_name = "Unlock saving"
 
-[node name="exit" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
+[node name="clear" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
 layout_mode = 2
-product_name = "Unlock Menu"
-
-[node name="share" parent="ScrollContainer/VBoxContainer" instance=ExtResource("2_xfvoa")]
-layout_mode = 2
-product_name = "Unlock Menu"
+product_name = "Unlock rubber"
 
 [node name="Colors" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_lx5au")]
 layout_mode = 2

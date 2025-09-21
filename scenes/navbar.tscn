@@ -1,19 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://bulxy2b3s2r43"]
+[gd_scene load_steps=10 format=3 uid="uid://bulxy2b3s2r43"]
 
 [ext_resource type="PackedScene" uid="uid://c1g3lx3kyw10u" path="res://scenes/button.tscn" id="1_c2531"]
 [ext_resource type="Script" uid="uid://cc2x1iltx3uo7" path="res://Scripts/navbar.gd" id="1_ffrot"]
 [ext_resource type="Texture2D" uid="uid://svc4rnlckcg0" path="res://Assets/sheet_white1x.png" id="2_ffrot"]
 [ext_resource type="Texture2D" uid="uid://cvntfy3cc2ee5" path="res://Assets/expansion_sheet_white1x.png" id="3_0ulrk"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c3nad"]
-resource_local_to_scene = true
-atlas = ExtResource("2_ffrot")
-region = Rect2(150, 250, 50, 50)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aa4wl"]
-resource_local_to_scene = true
-atlas = ExtResource("2_ffrot")
-region = Rect2(400, 100, 50, 50)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ffrot"]
 resource_local_to_scene = true
@@ -35,24 +25,17 @@ resource_local_to_scene = true
 atlas = ExtResource("3_0ulrk")
 region = Rect2(50, 100, 50, 50)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ulrk"]
+resource_local_to_scene = true
+atlas = ExtResource("3_0ulrk")
+region = Rect2(50, 50, 50, 50)
+
 [node name="navbar" type="HBoxContainer"]
 clip_contents = true
 offset_right = 1152.0
 offset_bottom = 32.0
 alignment = 1
 script = ExtResource("1_ffrot")
-
-[node name="share" parent="." instance=ExtResource("1_c2531")]
-custom_minimum_size = Vector2(40, 40)
-layout_mode = 2
-toggle_mode = false
-icon = SubResource("AtlasTexture_c3nad")
-
-[node name="exit" parent="." instance=ExtResource("1_c2531")]
-custom_minimum_size = Vector2(40, 40)
-layout_mode = 2
-toggle_mode = false
-icon = SubResource("AtlasTexture_aa4wl")
 
 [node name="shop" parent="." instance=ExtResource("1_c2531")]
 custom_minimum_size = Vector2(40, 40)
@@ -77,4 +60,10 @@ metadata/mode = true
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
 icon = SubResource("AtlasTexture_tbv1c")
+metadata/mode = true
+
+[node name="clear" parent="." instance=ExtResource("1_c2531")]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+icon = SubResource("AtlasTexture_0ulrk")
 metadata/mode = true

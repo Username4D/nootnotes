@@ -1,13 +1,11 @@
 extends HBoxContainer
 
 func _ready() -> void:
-	$share.pressed.connect(other_button_pressed.bind($share))
-	$exit.pressed.connect(other_button_pressed.bind($exit))
 	$shop.pressed.connect(other_button_pressed.bind($shop))
 	$save.pressed.connect(other_button_pressed.bind($save))
 	$type.pressed.connect(mode_button_pressed.bind($type))
 	$draw.pressed.connect(mode_button_pressed.bind($draw))
-	
+	$clear.pressed.connect(mode_button_pressed.bind($clear))
 	PurchaseManager.reload_navbar.connect(refresh)
 	refresh()
 	
